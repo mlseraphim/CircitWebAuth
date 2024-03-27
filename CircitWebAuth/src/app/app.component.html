@@ -1,0 +1,11 @@
+<h1>Circit Web Auth Frontend</h1>
+
+
+<button (click)="login()">Login With Facebook</button>
+
+<div *ngIf="fbUser.id !== ''">
+  <p>First Name: {{ fbUser.first_name }}</p>
+  <p>Last Name: {{ fbUser.last_name }}</p>
+  <p>Email: {{ fbUser.email }}</p>
+  <p>Id: {{ fbUser.id }}</p>
+</div>
